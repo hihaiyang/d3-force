@@ -24,7 +24,7 @@ function CanvasPaper() {
 			r: 20,
 			icon: 18,
 			distance: 120,
-			iconpath: '/rdp/img/icons/'
+			iconpath: geo.getWebRoot()+'/img/icons/'
 	};
 	this.node['border'] = (this.node.r-this.node.icon)*2;
 	this.enable = {
