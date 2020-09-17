@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+.triangle {
+	display: none;
+	padding: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	max-width: 235px;
+	height: auto;
+	border-radius: 10px;
+	background: rgba(66, 159, 161, 0.3);
+	font-size: 12px;
+	line-height: 20px;
+	color: cadetblue;
+}
+
+.triangle:before {
+	content: "";
+	display: block;
+	border: 8px solid transparent;
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 100%;
+	left: 12%;
+	border-bottom-color: rgba(66, 159, 161, 0.3);
+}
+
+.triangle-title {
+	font-weight: bold;
+}
+
+.triangle-content {
+	max-height: 115px;
+	overflow: auto;
+}
+
+.triangle-content::-webkit-scrollbar {
+	width: 6px;
+	height: 10px;
+}
+
+.triangle-content::-webkit-scrollbar-thumb {
+	background: rbga(255, 255, 255, 0.8);
+	border-radius: 8px;
+}
